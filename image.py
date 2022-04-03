@@ -1,15 +1,14 @@
 import cv2 as cv
-import numpy as np
-import matplotlib.pyplot as plt
-from outcome import capture
 
-img = cv.imread('goku.jpg')
+file = input('Enter a the File path : ')
 
-#cv.imshow('goku in color ',img)
+img = cv.imread(file)
+
+
 
 gray_image = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
-#cv.imshow('gray',gray_image)
+
 
 try:
     cv.imwrite('gray_goku.jpg',gray_image)
