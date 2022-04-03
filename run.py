@@ -16,5 +16,5 @@ import image
 import resize
 import binary
 import printer
-clean()
+#clean()
 

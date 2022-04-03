@@ -9,3 +9,5 @@ python code
 3)convert to binary 2D matrix
 
 4)print 2D matrix based on design
+
+
