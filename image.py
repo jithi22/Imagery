@@ -1,19 +1,18 @@
 import cv2 as cv
 
-file = input('Enter a the File path : ')
-
-img = cv.imread(file)
-
-
-
-gray_image = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
-
 
 try:
-    cv.imwrite('gray_goku.jpg',gray_image)
-    print("\nWrite Success !!")
+  file = input('Enter a the File path : ')
+  scrImage = cv.imread(file)
+  gray_image = cv.cvtColor(scrImage, cv.COLOR_BGR2GRAY)
 except:
-    print("Write failed...!")    
+    print(file +' Image not Found !!!')
+    import image
+    exit()    
+try:
+    ret , bw = cv.threshold(gray_image,127,255,cv.THRESH_BINARY)
+    cv.imwrite('bsImage.jpg',bw)
+    print("\nImage converted to binary scale  ٩(•̤̀ᵕ•̤́๑)ᵒᵏOKᵎᵎᵎᵎ")
+except:
+    print("Error converting to binary Scale (=.=) !!!")    
 
-cv.waitKey(0)
