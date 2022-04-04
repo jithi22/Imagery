@@ -7,14 +7,15 @@ def clean():
 
 try:
     clean()
-    print("Starting Printer\n\n")
+    print("\n< Old Files Removed...!! >\nStarting..Script")
 
 except:
-    print("Starting Printer\n\n")
+    print("No files found to remove..Starting..Script")
 
 import image
 import resize
 import binary
-import printer
-#clean()
+
+#import printer
+
 
