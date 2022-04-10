@@ -2,8 +2,11 @@
 How to Run(python 3)
 
 step 1 : Open Terminal in Imagery Folder
+
 step 2 : Install requirements using >   pip3 install -r requirements.txt
+
 step 3 : Run the Scripts >  python ImageryGui.py
+
 
 see screenshots folder
 
