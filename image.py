@@ -2,7 +2,9 @@ import cv2 as cv
 
 
 try:
-  file = input('Enter a the File path : ')
+  fhandle = open(r'./config/Iconf.txt')
+  file = fhandle.read()
+  fhandle.close()
   scrImage = cv.imread(file)
   gray_image = cv.cvtColor(scrImage, cv.COLOR_BGR2GRAY)
 except:
